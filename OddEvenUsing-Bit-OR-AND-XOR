@@ -33,5 +33,25 @@ public class OddEven {
  * Bitwise OR --------------> 1101 i.e. 13 (increased by 1)
  * 
  * Above example shows that adding 1 by Bitwise OR in even no. increase
- * no. by 1 but remains same in odd no.
- */
+ * no. by 1 but remains same in odd no. */
+
+
+/*BITWISE-AND: both '1' then '1' otherwise '0'.
+  * let n=15 ---->binary no. = 1111
+ *         1 ---->binary no. = 0001
+ * Bitwise AND --------------> 0001 i.e. 1 
+ * 
+ * let n = 12--->binary no. = 1100
+ *  *       1 -->binary no. = 0001
+ * Bitwise AND -------------> 0000 i.e. 0 */
+
+
+ /*BITWISE-XOR (^): koi ek '1' to hi '1'.
+  *  let n=15 ---->binary no. = 1111
+ *          1 ---->binary no. = 0001
+ * Bitwise XOR  --------------> 1110 i.e. 14 (decreased by 1)
+ * 
+ * let n = 12--->binary no. = 1100
+ *  *       1 -->binary no. = 0001
+ * Bitwise XOR -------------> 1101 i.e. 13 (increased by 1)
+  */
