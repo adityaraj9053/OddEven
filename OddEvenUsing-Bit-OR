@@ -1,0 +1,37 @@
+//Java Program to Check if a Given Integer is Odd or Even using Bitwise OR 
+
+import java.util.Scanner;
+
+public class OddEven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int n= sc.nextInt();
+        CheckOddEven(n);
+    }
+
+    public static void CheckOddEven(int n){
+
+        if((n|1)>n){ // adding 1 using bitwise OR. if 
+    //(resultant n) > initial n, it means that no. is even.
+    
+            System.out.println(n+" is even");
+        }else{
+            System.out.println(n+" is odd");
+        }
+    }
+}
+/*Logic:
+ * Bitwise OR: dono '0' to '0', otherwise 1.
+ * 
+ * let n=15 ---->binary no. = 1111
+ *        1 ---->binary no. = 0001
+ * Bitwise OR --------------> 1111 i.e. 15 (Not increased)
+ * 
+ * let n = 12--->binary no. = 1100
+ *  *       1 -->binary no. = 0001
+ * Bitwise OR --------------> 1101 i.e. 13 (increased by 1)
+ * 
+ * Above example shows that adding 1 by Bitwise OR in even no. increase
+ * no. by 1 but remains same in odd no.
+ */
